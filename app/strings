@@ -1,0 +1,44 @@
+name = 'John Doe'
+age = 26
+
+name_and_age = name  # Start with the name
+name_and_age += str(age)  # Append the age as string
+
+print(name_and_age)  # John Doe26
+
+
+num1 = 10
+num2 = 20
+result = num1 + num2
+print(f"The sum of {num1} and {num2} is {result}")
+# Slicing
+s = "Hello, World!"
+# print(s[0:5])  # Hello
+# print(s[7:12])  # World
+first_word = s[:5]  # Hello
+second_word = s[7:]  # World
+
+print(first_word)
+print(second_word[::-1])
+print(second_word.upper()) 
+print(second_word.lower())
+
+print((second_word + " " + first_word)) 
+stripped_word = second_word + " " + first_word#    Convert the second word to uppercase
+print(stripped_word.strip())
+
+my_string = "   Hello, World!   "
+my_string_replaced = my_string.replace("World", "Python")
+print(my_string_replaced.strip())
+
+my_string_replaced = my_string.replace("Hello", "Ciao")
+print(my_string_replaced.strip())
+
+long_string = "Joins elements of an iterable into a string with a separator."
+print(long_string.split())
+split_result = long_string.split()
+print(" ".join(split_result))
+if my_string.endswith("World!   "):
+    print("The string ends with 'World!'")
+else:
+    print("The string does not end with 'World!'")
