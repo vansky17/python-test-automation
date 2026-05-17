@@ -42,5 +42,5 @@ def apply_discount(price, discount):
 
     final_price = price - (price * discount / 100)
 
-    return final_price
+    return final_price, 
 print(apply_discount(100, 20))

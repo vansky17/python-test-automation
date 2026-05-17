@@ -42,3 +42,13 @@ if my_string.endswith("World!   "):
     print("The string ends with 'World!'")
 else:
     print("The string does not end with 'World!'")
+
+my_str = 'hello world'
+o_count = my_str.count('o')
+print(o_count)  # 2
+
+cout_o = 0
+for char in my_str:
+    if char == 'o':
+        cout_o += 1
+print(cout_o)  # 2
